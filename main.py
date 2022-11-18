@@ -29,8 +29,7 @@ def index():
 @app.route("/", methods=['POST'])
 def move():
     request.get_data()
-    
-    
+        
     dims = request.json['arena']['dims']
     
     m_state = request.json['arena']['state']['https://cloud-run-hackathon-python-z7wwhw7czq-uc.a.run.app']
