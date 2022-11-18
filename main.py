@@ -14,13 +14,10 @@
 # limitations under the License.
 
 import os
-import json
 import logging
 import random
 from flask import Flask, request
 
-logging.basicConfig(level=os.environ.get("LOGLEVEL", "INFO"))
-logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
 moves = ['F', 'T', 'L', 'R']
@@ -32,9 +29,8 @@ def index():
 @app.route("/", methods=['POST'])
 def move():
     request.get_data()
-    # logger.info(request.json)
     
-    # TODO add your implementation here to replace the random response
+    
     dims = request.json['arena']['dims']
     
     my_state = request.json['arena']['state']['https://cloud-run-hackathon-python-z7wwhw7czq-uc.a.run.app']
