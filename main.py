@@ -26,7 +26,7 @@ def move():
 
 def myself(data):
     records = GetValue2(data)
-    me = records.get_values('https://cloud-run-hackathon-python-z7wwhw7czq-uc.a.run.app')
+    me = records.get_values('https://cloud-run-hackathon-python1-z7wwhw7czq-uc.a.run.app')
     x= me['x']
     y= me['y']
     hit=me['wasHit']
@@ -70,4 +70,3 @@ def check(moves, data,target_range, defend_range, hit) :
 
 if __name__ == "__main__":
   app.run(debug=False,host='0.0.0.0',port=int(os.environ.get('PORT', 8080)))
-  
