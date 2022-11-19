@@ -1,8 +1,10 @@
 Cloud Bowl Sample - Python
 ---------------------------------
+Battle API
 
 To make changes, edit the `main.py` file.
 
+Added logic to the api, needs changes for better movement.
 It's recommended to run everything in a virtual environment. You can find a
 guide how to set this up [here](https://docs.python.org/3/library/venv.html)
 
